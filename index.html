@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html lang>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>岭南准页面01</title>   
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css">
+    <style type="text/css">
+    body{
+        font-family:'Microsoft Yahei',sans-serif;
+        font-weight: 400;
+        padding: 0;margin:0;
+    }
+    p{
+        margin: 0;padding: 0;
+    }
+    .big_pic{
+        background: url(img/bigpic.jpg) no-repeat;
+        background-position: center;
+    }
+    .mask{
+        background-color: rgba(255,255,255,0.6);
+    }
+    .big_pic2{
+        background: url(img/bigpic2.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .big_pic2 .butp{
+        padding: 20px 0;
+    }
+    .big_pic2 .butp p{
+        font-size: 26px;
+        color: #888;
+    }
+    .big_pic2 .line{
+        content: "";
+        width: 15%;
+        display: inline-block;
+        border-top: 3px solid #de5c5c;
+    }
+    .big_pic2 .btn_doc{
+        padding: 6px 20px;
+        margin-top: 10%;
+    }
+    .navbar_doc{
+        background-color: #fff;
+            position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    }
+    .text_center{
+        text-align: center;
+    }
+    .text_left{
+        text-align: left;
+    }
+    .text_right{
+        text-align: right;
+    }
+    .navbar{
+        background-color: #fff;
+    }
+    .title{
+        padding: 70px 0 50px;
+        color:;
+    }
+    .title h3{
+        display: inline-block;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #908f8b;
+    }
+    .title div a{
+        margin: 10px 8px 0;
+    }
+    .three{
+        padding:80px 0 30px;
+    }
+    .pic{
+        width: 126px;height: 126px;
+        position: relative;
+        display: inline-block;
+    }
+    .pic img{
+        margin: 23px 0;
+    }
+    #circle{
+        width:126px;
+        height:126px;
+        border-radius:126px;
+        border:8px solid #d7d7d7;
+        position: absolute;
+        top: 0;left:0;
+    }
+    .three h4 span{
+        font-weight: bold;
+        border-bottom:1px solid transparent;
+        padding: 0 8px 5px;
+    }
+    .three p{
+        /*padding: 12px 0 30px;*/
+        margin: 22px auto 30px;
+        /*width: 75%;*/
+    }
+    .introdu{
+        background-color: #fafafa;
+        border-top:1px solid #bfbfbf;
+    }
+    .introdu .container img{
+        width: 100%;
+    }
+    .introdu .container .line{
+        content:"";
+        width: 10%;
+        border-bottom: 2px solid #de5c5c;
+        margin:10px 0 -10px;
+    }
+    .introdu .container .text_left{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .introdu .container h4 span{
+        color: #de5c5c;
+    }
+
+/*    .icon-arrow-down:before{
+        content:"";
+        width: 20px;height: 3px;
+        background-color: #666;
+        transform: skewY(45deg);
+        position: absolute;
+        top: 0;right: 50%;
+    }
+    .right{
+        content: "——";
+        width: 20px;height: 3px;
+        background-color: #666;
+        transform: skewY(-45deg);
+        position: absolute;
+        top: 0;left: 50%;
+    }*/
+    footer{
+        background-color: #7a7a7a;
+        color: #fff;
+    }
+    footer .container img{
+        width: 70%;
+        max-width: 180px;
+    }
+    footer .container>.row{
+        border-bottom: 1px solid #afafaf;
+        padding: 35px 0 25px;
+    }
+    footer .contact{
+        padding-left: 8%;
+        padding-top: 20px;
+    }
+    .contact p span{
+        font-family: '宋体',sans-serif;
+        background-color: #347ab6;
+        border:5px solid #347ab6;
+        border-radius: 8px;
+    }
+    #copy{
+        padding: 20px 0 40px;
+    }
+    .lnz_doc .navbar-toggle .icon-bar{
+        background-color: #de5c5c;
+    }
+    #lnz_nav >ul >li >a{
+        color: #6c6c6c;
+        border-bottom: 2px solid #fff;
+    }
+    #lnz_nav >ul >li >a:hover,
+    #lnz_nav >ul >li >a:focus,
+    #lnz_nav >ul >li.active >a{
+        color: #de5c5c;
+        background-color: #e7e7e7;
+        border-bottom: 2px solid #de5c5c;
+    }
+    @media(max-width: 767px){
+        .title a.btn{
+            width: 80%;
+        }
+    }
+    @media(max-width: 465px){
+        .block{
+            display: block;
+        }
+    }
+    </style>
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="wrapper">
+        <div class="big_pic text_center">
+        <div class="mask">
+            <header class="navbar_doc">
+              <div class="container">
+                <div class="navbar-header lnz_doc">
+                  <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#lnz_nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class=""><img src="img/logo.png"></a>
+                </div>
+                <nav class="collapse navbar-collapse" id="lnz_nav">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li class="dropdown">
+                        <a href="##" data-toggle="dropdown" class="dropdown-toggle">选择服务项目<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li role="presentation" class="dropdown-header">HIV 和 梅毒</li>
+                            <li><a href="##">艾滋病没那么可怕 (基本知识)</a></li>
+                            <li><a href="##">去服务点检测</a></li>
+                            <li><a href="##">在家自助检测 (岭南准)</a></li>
+                            <li><a href="##">性病筛查咨询</a></li>
+                                    
+                            <li role="presentation" class="divider"></li>
+                            <li><a href="##">定期检测提醒</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">服务评价</a></li>
+                    <li class="dropdown">
+                        <a href="##" data-toggle="dropdown" class="dropdown-toggle">咨询与互动<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="##">HIV和男男社区</a></li>
+                            <li><a href="##">性病相关</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="##">关于我们</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </header>
+            <div class="title">
+                <h1 style="font-size: 72px;">岭南准</h1>
+                <h3 style="font-size: 25px;"><span>足不出户，就能做专业的<span class="block">HIV / 梅毒测试</span></span></h3>
+                <div>
+                    <a href="##" type="button" class="btn btn-default"><i class="fa fa-wrench" aria-hidden="true"></i>&nbsp;&nbsp;轻松操作</a>
+                    <a href="##" type="button" class="btn btn-default"><i class="fa fa-medkit" aria-hidden="true"></i>&nbsp;&nbsp;如何获得</a>
+                    <a href="##" type="button" class="btn btn-default"><i class="fa fa-rmb"></i>&nbsp;&nbsp;补贴申领</a>
+                </div>
+                <a href="#trig" class="icon-arrow-down">
+                    <span class="glyphicon glyphicon-menu-down" style="font-size: 30px;padding-top: 30px;"></span>
+                </a>
+            </div>
+        </div>
+        </div>
+
+        <div class="big_pic2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-6 butp text_right">
+                            <h1 style="font-size: 48px;">享受补贴</h1>
+                            <span class="line"></span>
+                            <p>广东省地区<span class="block">均可享受政府补贴</span></p>
+                            <p>有40个城市已开通<span style="color: #ff9999;" class="block">全额补贴</span></p>
+                            <p>数量有限</p>
+                            <a href="##" type="button" class="btn btn-primary btn_doc">立即领取</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <a name="trig"></a>
+        <div class="container">
+            <div class="row text_center three">
+            <div class="col-md-4 col-sm-4">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="pic">
+                            <div id="circle"></div>
+                            <img src="img/lnz_lock.png">
+                        </div>
+                        <h4><span style="border-color: #389c00;">保护隐私</span></h4>
+                        <p>“岭南准”自检套装，随时随地都能自助检测，比如房间里<br />
+                        有效保护您的个人隐私</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="pic">
+                            <div id="circle"></div>
+                            <img src="img/lnz_doct.png">
+                        </div>
+                        <h4><span style="border-color: #16c1ff;">专业服务</span></h4>
+                        <p>“岭南准”是岭南伙伴与广州疾控中心共同研发的，专业、安全、可靠<br />
+                        您上传的检测结果，也有专业人员为您判读并为您解答HIV相关问题</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="pic">
+                            <div id="circle"></div>
+                            <img src="img/lnz_butp.png">
+                        </div>
+                        <h4><span style="border-color: #ffb017;">享受补贴</span></h4>
+                        <p>在广东省、广州市政府部门的支持下广东省用户能享受到一定补贴<br />
+                        不同地区的补贴也不一样<br />我们努力为更多的地区争取补贴</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="introdu">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-1 col-sm-push-5 text_left">
+                    <p class="line"></p>
+                    <h3>为什么研发岭南准？</h3>
+                    <p>岭南伙伴自2007年开设了线下HIV检测服务，解决了众多同志朋友的检测问题，但是通过我们的调查，还是有很多的朋友受
+                    天气，地区，工作等问题，没法即使来检测，为此，我们研发了“岭南准”自检套装，让更多的朋友不受时间，空间等影响，在
+                    家也能自助检测。</p>
+                </div>
+                <div class="col-sm-5 col-sm-pull-7 col-md-4 col-md-offset-2 text_center">
+                    <img src="img/lnz_org.png" style="max-width: 400px;">
+                </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="introdu">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-5 col-md-offset-1 col-sm-6 text_left">
+                    <p class="line"></p>
+                    <h3>与市面上其他试纸有什么不同？</h3>
+                    <h4><span>•&nbsp;</span>专业</h4>
+                    <p>岭南准是广东省、广州市政府部门支持下，岭南伙伴与广州疾控中心合作开发的，专业、安全。</p>
+                    <h4><span>•&nbsp;</span>服务</h4>
+                    <p>用户上传的每一个检测结果， 我们有专业的工作人员24小时内为您判读，并随时提供咨询服务，解答HIV等相关问题。</p>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <img src="img/lnz_sz2.png">
+                </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                <div class="col-md-3 text_center">
+                    <h3>岭南伙伴公众号</h3>
+                    <img src="img/lnz_ma.png">
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 contact">
+                            <p><span><i class="fa fa-comment" aria-hidden="true"></i> 淘宝旺旺</span></p>
+                            <h3>lingnanzhun</h3>
+                            <p>(只负责售前咨询)</p>
+                        </div>
+                        <div class="col-sm-4 col-md-4 contact">
+                            <p><span><i class="fa fa-phone" aria-hidden="true"></i> 24小时紧急电话咨询</span></p>
+                            <h3>137 517 18599</h3>
+                            <p>(要提供服务密码)</p>
+                        </div>
+                        <div class="col-sm-4 col-md-4 contact">
+                            <p><span><i class="fa fa-weixin" aria-hidden="true"></i> 微信咨询</span></p>
+                            <h3>lingnanzhun</h3>
+                            <p>(只负责售前咨询)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="copy">
+                    <p class="text_center">&copy;2007-2016 岭南伙伴社区支持中心 · 热线电话：020-83754300 (接听时间9:00-21:00)</p>
+                    <p class="text_center">广同网 旗下专业服务</p>
+            </div>
+        </footer>
+    </div>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+</body>
+</html>
