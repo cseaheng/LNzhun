@@ -20,13 +20,29 @@
         background: url(img/bigpic.jpg) no-repeat;
         background-position: center;
     }
-    .mask{
-        background-color: rgba(255,255,255,0.6);
+    .big_pic .mask{
+        background-color: rgba(255,255,255,0.7);
     }
+    #trig:after {
+	  content: " ";
+	  position: absolute;
+	  top: 50px;
+	  width: 23px;
+	  height: 23px;
+	  border: #555 solid 1px;
+	  border-left: 0;
+	  border-top: 0;
+	  -webkit-transform: rotate(45deg);
+	  -ms-transform: rotate(45deg);
+	  transform: rotate(45deg);
+	}
     .big_pic2{
         background: url(img/bigpic2.jpg) no-repeat;
         background-position: center;
         background-size: cover;
+    }
+    .big_pic2 .mask{
+        background-color: rgba(255,255,255,0.7);
     }
     .big_pic2 .butp{
         padding: 20px 0;
@@ -43,14 +59,14 @@
     }
     .big_pic2 .btn_doc{
         padding: 6px 20px;
-        margin-top: 10%;
+        margin-top: 8%;
     }
     .navbar_doc{
         background-color: #fff;
-            position: relative;
-    min-height: 50px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
+	    position: relative;
+	    min-height: 50px;
+	    margin-bottom: 20px;
+	    box-shadow: 0 1px 2px #aaa;
     }
     .text_center{
         text-align: center;
@@ -65,8 +81,8 @@
         background-color: #fff;
     }
     .title{
-        padding: 70px 0 50px;
-        color:;
+        padding: 50px 0 130px;
+        
     }
     .title h3{
         display: inline-block;
@@ -77,8 +93,9 @@
     .title div a{
         margin: 10px 8px 0;
     }
+
     .three{
-        padding:80px 0 30px;
+        padding:45px 0 10px;
     }
     .pic{
         width: 126px;height: 126px;
@@ -106,25 +123,32 @@
         margin: 22px auto 30px;
         /*width: 75%;*/
     }
-    .introdu{
+    .introdu{}
+    .introdu_s{
         background-color: #fafafa;
-        border-top:1px solid #bfbfbf;
     }
-    .introdu .container img{
+    .introdu .container img,
+    .introdu_s .container img{
         width: 100%;
     }
-    .introdu .container .line{
+    .introdu .container .line,
+    .introdu_s .container .line{
         content:"";
         width: 10%;
         border-bottom: 2px solid #de5c5c;
         margin:10px 0 -10px;
     }
-    .introdu .container .text_left{
+    .introdu .container .text_left,
+    .introdu_s .container .text_left{
         margin-bottom: 30px;
         margin-top: 30px;
     }
-    .introdu .container h4 span{
+    .introdu .container h4 span,
+    .introdu_s .container h4 span{
         color: #de5c5c;
+    }
+    .introdu_s .container p{
+    	margin-left: 1em;
     }
 
 /*    .icon-arrow-down:before{
@@ -153,7 +177,7 @@
     }
     footer .container>.row{
         border-bottom: 1px solid #afafaf;
-        padding: 35px 0 25px;
+        padding: 35px 0 30px;
     }
     footer .contact{
         padding-left: 8%;
@@ -166,10 +190,21 @@
         border-radius: 8px;
     }
     #copy{
-        padding: 20px 0 40px;
+        padding: 30px 0 54px;
+    }
+    .lnz_doc a{
+    	padding-left: 20px;
     }
     .lnz_doc .navbar-toggle .icon-bar{
         background-color: #de5c5c;
+    }
+    .lnz_doc img{
+    	padding:3px 0;
+    	height: 52px;
+    }
+    #lnz_nav ul{
+    	padding-top: ;
+    	font-size: 15px;
     }
     #lnz_nav >ul >li >a{
         color: #6c6c6c;
@@ -179,7 +214,7 @@
     #lnz_nav >ul >li >a:focus,
     #lnz_nav >ul >li.active >a{
         color: #de5c5c;
-        background-color: #e7e7e7;
+        background-color: transparent;
         border-bottom: 2px solid #de5c5c;
     }
     @media(max-width: 767px){
@@ -205,7 +240,7 @@
         <div class="mask">
             <header class="navbar_doc">
               <div class="container">
-                <div class="navbar-header lnz_doc">
+                <div class="navbar-header lnz_doc text_left">
                   <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#lnz_nav">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -251,29 +286,68 @@
                     <a href="##" type="button" class="btn btn-default"><i class="fa fa-medkit" aria-hidden="true"></i>&nbsp;&nbsp;如何获得</a>
                     <a href="##" type="button" class="btn btn-default"><i class="fa fa-rmb"></i>&nbsp;&nbsp;补贴申领</a>
                 </div>
-                <a href="#trig" class="icon-arrow-down">
-                    <span class="glyphicon glyphicon-menu-down" style="font-size: 30px;padding-top: 30px;"></span>
+                <a href="#trig" id="trig" class="icon-arrow-down" style="position: relative;">
+
+                    <!--<img src="img/arrowdown.png">-->
                 </a>
             </div>
         </div>
         </div>
 
         <div class="big_pic2">
-                <div class="container">
+        	<div class="mask">
+        		<div class="container">
                     <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-6 butp text_right">
+                        <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 butp text_center">
                             <h1 style="font-size: 48px;">享受补贴</h1>
                             <span class="line"></span>
                             <p>广东省地区<span class="block">均可享受政府补贴</span></p>
-                            <p>有40个城市已开通<span style="color: #ff9999;" class="block">全额补贴</span></p>
+                            <p>有40个城市已开通<span style="color: #de5c5c;" class="block">全额补贴</span></p>
                             <p>数量有限</p>
                             <a href="##" type="button" class="btn btn-primary btn_doc">立即领取</a>
                         </div>
                     </div>
                 </div>
+        	</div>
         </div>
 
         <a name="trig"></a>
+
+        <div class="introdu">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-1 col-sm-push-5 text_left">
+                    <div class="line"></div>
+                    <h3>为什么研发岭南准？</h3>
+                    <p>岭南伙伴自2007年开设了线下HIV检测服务，解决了众多同志朋友的检测问题，但是通过我们的调查，还是有很多的朋友受
+                    天气，地区，工作等问题，没法即使来检测，为此，我们研发了“岭南准”自检套装，让更多的朋友不受时间，空间等影响，在
+                    家也能自助检测。</p>
+                </div>
+                <div class="col-sm-5 col-sm-pull-7 col-md-4 col-md-offset-2 text_center">
+                    <img src="img/lnz_org.png" style="max-width: 400px;">
+                </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="introdu_s">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-5 col-md-offset-1 col-sm-6 text_left">
+                    <div class="line"></div>
+                    <h3>与市面上其他试纸有什么不同？</h3>
+                    <h4><span>•&nbsp;</span>专业</h4>
+                    <p>岭南准是广东省、广州市政府部门支持下，岭南伙伴与广州疾控中心合作开发的，专业、安全。</p>
+                    <h4><span>•&nbsp;</span>服务</h4>
+                    <p>用户上传的每一个检测结果， 我们有专业的工作人员24小时内为您判读，并随时提供咨询服务，解答HIV等相关问题。</p>
+                </div>
+                <div class="col-md-6 col-sm-6" style="max-height: 350px;overflow: hidden;">
+                    <img src="img/lnz_sz2.png">
+                </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <div class="row text_center three">
             <div class="col-md-4 col-sm-4">
@@ -317,40 +391,7 @@
             </div>
         </div>
         </div>
-        <div class="introdu">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-1 col-sm-push-5 text_left">
-                    <p class="line"></p>
-                    <h3>为什么研发岭南准？</h3>
-                    <p>岭南伙伴自2007年开设了线下HIV检测服务，解决了众多同志朋友的检测问题，但是通过我们的调查，还是有很多的朋友受
-                    天气，地区，工作等问题，没法即使来检测，为此，我们研发了“岭南准”自检套装，让更多的朋友不受时间，空间等影响，在
-                    家也能自助检测。</p>
-                </div>
-                <div class="col-sm-5 col-sm-pull-7 col-md-4 col-md-offset-2 text_center">
-                    <img src="img/lnz_org.png" style="max-width: 400px;">
-                </div>
-                
-                </div>
-            </div>
-        </div>
-        <div class="introdu">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-5 col-md-offset-1 col-sm-6 text_left">
-                    <p class="line"></p>
-                    <h3>与市面上其他试纸有什么不同？</h3>
-                    <h4><span>•&nbsp;</span>专业</h4>
-                    <p>岭南准是广东省、广州市政府部门支持下，岭南伙伴与广州疾控中心合作开发的，专业、安全。</p>
-                    <h4><span>•&nbsp;</span>服务</h4>
-                    <p>用户上传的每一个检测结果， 我们有专业的工作人员24小时内为您判读，并随时提供咨询服务，解答HIV等相关问题。</p>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <img src="img/lnz_sz2.png">
-                </div>
-                </div>
-            </div>
-        </div>
+
         <footer>
             <div class="container">
                 <div class="row">
@@ -385,7 +426,7 @@
             </div>
         </footer>
     </div>
-    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
 </body>
 </html>
